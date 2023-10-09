@@ -27,6 +27,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val btnpin : Button = findViewById(R.id.btnPin)
         btnpin.setOnClickListener(this)
+
+        val btnfrag : Button = findViewById(R.id.btnfrag)
+        btnfrag.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -40,12 +43,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
 
             }
-        }
-        when(v.id){
-            R.id.btnfrag ->{
-                val intent = Intent(this@MainActivity,BlankFragment::class.java)
+            R.id.btnfrag -> {
+                val intent = Intent(this@MainActivity,FrActivity::class.java)
                 startActivity(intent)
-
             }
         }
     }
