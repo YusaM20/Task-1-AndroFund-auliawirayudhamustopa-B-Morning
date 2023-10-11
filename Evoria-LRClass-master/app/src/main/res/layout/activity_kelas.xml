@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.KelasActivity">
+
+    <ImageView
+        android:id="@+id/bckIcon"
+        android:layout_width="26dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/bckarrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txkel"
+        android:layout_width="62dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="60dp"
+        android:text="Kelas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toEndOf="@+id/bckIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgTen"
+        android:layout_width="175dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="92dp"
+        android:src="@drawable/bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txkel" />
+
+    <TextView
+        android:id="@+id/txtlas"
+        android:layout_width="312dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="8dp"
+        android:text="Tidak melihat kelas yang sudah ada?"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTen" />
+
+    <TextView
+        android:id="@+id/txlas"
+        android:layout_width="312dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="192dp"
+        android:text="Buat kelas pertama anda"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtlas" />
+
+    <ImageView
+        android:id="@+id/btnPlus"
+        android:layout_width="61dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txlas" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

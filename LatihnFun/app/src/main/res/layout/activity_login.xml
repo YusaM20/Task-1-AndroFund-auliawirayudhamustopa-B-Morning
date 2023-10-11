@@ -31,40 +31,45 @@
 
    <EditText
        android:id="@+id/edt_User"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_marginEnd="16dp"
-       android:layout_marginStart="16dp"
-       app:layout_constraintTop_toBottomOf="@+id/tv_userrname"/>
+       android:layout_width="381dp"
+       android:layout_height="47dp"
+       android:background="@drawable/border_icon"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/tv_userrname" />
+
    <TextView
        android:id="@+id/tv_password"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_marginTop="4dp"
+       android:layout_marginTop="16dp"
        android:text="Password"
        app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.072"
+       app:layout_constraintHorizontal_bias="0.077"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/edt_User"/>
+       app:layout_constraintTop_toBottomOf="@+id/edt_User" />
 
    <EditText
        android:id="@+id/edt_Pass"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_marginEnd="16dp"
-       android:layout_marginStart="16dp"
+       android:layout_width="384dp"
+       android:layout_height="43dp"
+       android:layout_marginTop="20dp"
+       android:background="@drawable/border_icon"
        android:password="true"
-       app:layout_constraintTop_toBottomOf="@+id/tv_password"/>
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/tv_password" />
 
    <Button
        android:id="@+id/btnLogin"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
+       android:layout_marginTop="40dp"
        android:text="Login"
        app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toBottomOf="@+id/edt_Pass" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
